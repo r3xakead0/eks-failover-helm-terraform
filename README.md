@@ -28,5 +28,5 @@ Pensado para ser **simple y económico**.
 ### Sin falla en el primario
 ![screenshot](docs/demo-eks-without-failover.png)
 
-### C falla en el primario y cambio al secundario
+### Con falla en el primario y cambio al secundario
 ![screenshot](docs/demo-eks-with-failover.png)
