@@ -3,11 +3,11 @@ resource "aws_route53_health_check" "primary_web" {
   # Comprobamos el hostname del Service LB primario
   fqdn              = kubernetes_service.web_primary.status[0].load_balancer[0].ingress[0].hostname
   port              = 80
-  # type              = "TCP"
-  type              = "HTTP"
+  type              = "TCP"
+  # type              = "HTTP"
   # resource_path     = "/"
-  failure_threshold = 3
-  request_interval  = 30
+  failure_threshold = 1
+  request_interval  = 15
 }
 
 
